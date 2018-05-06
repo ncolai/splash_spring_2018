@@ -1,6 +1,6 @@
 #Reference solutions and tester function
 #Please read these after class is over! 
-import my_fibonacci, my_factorial, my_fizzbuzz
+import functions
 
 #can you think of a way to reduce the number of lines of code even more? 
 def fizzbuzz(number):
@@ -46,9 +46,9 @@ def check_function(function1, function2, lower_lim, upper_lim):
             print("Yay, your function works on input {}!".format(number))
 
 if __name__ == "__main__":
-    functions = {fibonacci: my_fibonacci.fibonacci, 
-                fizzbuzz: my_fizzbuzz.fizzbuzz,
-                factorial: my_factorial.factorial}
+    functions = {fibonacci: functions.fibonacci, 
+                fizzbuzz: functions.fizzbuzz,
+                factorial: functions.factorial}
     test_function = input("Please enter a function to check: ")
     if test_function not in functions:
         print("Usage: put in either fibonacci, fizzbuzz, or factorial")
